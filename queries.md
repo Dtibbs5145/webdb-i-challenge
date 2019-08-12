@@ -2,7 +2,16 @@
 
 ## Find all customers with postal code 1010
 
+    SELECT * FROM Customers
+    WHERE PostalCode = '1010'
+
 ## Find the phone number for the supplier with the id 11
+
+    SELECT Phone FROM Suppliers                             <<Just for phone number>>
+    WHERE supplierId = '11'
+
+    SELECT Phone, SupplierName, SupplierId FROM Suppliers   <<Will show the phone, supplier id, and supplier name>>
+    WHERE supplierId = '11'
 
 ## List first 10 orders ever places, descending by the order date
 
